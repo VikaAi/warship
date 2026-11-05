@@ -46,7 +46,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .count{font-family:var(--f-code);font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem;direction:ltr}
 
 /* board grid: always left-to-right, like the array */
-.board{direction:ltr;display:grid;grid-template-columns:28px repeat(5,var(--cell));grid-template-rows:24px repeat(5,var(--cell));gap:0;justify-content:center;position:relative}
+.board{direction:ltr;display:grid;grid-template-columns:28px repeat(5,var(--cell));grid-template-rows:auto 24px repeat(5,var(--cell));gap:0;justify-content:center;position:relative}
 .board .name{grid-column:1/-1;font-family:var(--f-code);font-weight:700;font-size:.85rem;justify-self:start;align-self:end;padding-left:28px;color:var(--muted)}
 .lab{font-family:var(--f-code);font-weight:700;color:var(--line);display:grid;place-items:center;font-size:.95rem}
 .cell{position:relative;background:var(--sea);border:1px solid var(--line);margin:-.5px;display:grid;place-items:center;padding:0;border-radius:0;
